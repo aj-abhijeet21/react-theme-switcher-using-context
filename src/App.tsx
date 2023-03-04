@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import './App.css'
+import { GlobalContextProvider } from './context/GlobalContext'
+import HobbyManagement from './pages/HobbyManagement'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Overview from './pages/Overview'
+
+const router = createBrowserRouter([
+  { path: '/', element: <Login /> },
+  { path: 'home', element: <Home /> },
+  { path: 'login', element: <Login /> },
+  { path: 'overview', element: <Overview /> },
+  { path: 'hobbyManagement', element: <HobbyManagement /> },
+])
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <GlobalContextProvider>
+      <RouterProvider router={router} />
+    </GlobalContextProvider>
+  )
 }
 
-export default App;
+export default App

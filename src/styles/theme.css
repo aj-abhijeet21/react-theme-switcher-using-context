@@ -1,0 +1,67 @@
+.pinkContainer {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pinkButton {
+  background-color: white;
+  border-radius: 10;
+  border-width: 2;
+  border-color: #5f7bf5;
+  color: pink;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.blueContainer {
+  background-color: #5f7bf5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.blueButton {
+  background-color: white;
+  border-width: 2;
+  border-color: pink;
+  color: #5f7bf5;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.loginContainer {
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.inputField {
+  width: 80%;
+  background-color: cornsilk;
+  color: black;
+  border-radius: 50;
+  border-width: 0;
+  height: 36px;
+  font-size: 15px;
+  margin: 20px;
+  padding: 8px;
+}
+
+.authButton {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-weight: 700;
+}
